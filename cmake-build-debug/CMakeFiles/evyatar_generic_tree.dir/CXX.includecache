@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/amichai/CLionProjects/evyatar-generic-tree/Node.h
+
+/home/amichai/CLionProjects/evyatar-generic-tree/Tree.h
+Node.h
+/home/amichai/CLionProjects/evyatar-generic-tree/Node.h
+iostream
+-
+
+/home/amichai/CLionProjects/evyatar-generic-tree/main.cpp
+iostream
+-
+Tree.h
+/home/amichai/CLionProjects/evyatar-generic-tree/Tree.h
+

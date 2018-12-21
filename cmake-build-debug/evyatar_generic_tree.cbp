@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="evyatar_generic_tree"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evyatar_generic_tree">
+				<Option output="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/evyatar_generic_tree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 evyatar_generic_tree"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evyatar_generic_tree/fast">
+				<Option output="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/evyatar_generic_tree" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 evyatar_generic_tree/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/amichai/CLionProjects/evyatar-generic-tree/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Arena.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Arena.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Defencemen.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Defencemen.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Forwards.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Forwards.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Game.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Game.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Goalie.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Goalie.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Group.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Group.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Limits.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Limits.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Node.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Player.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Player.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Point.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Point.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/SpeedVector.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/SpeedVector.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Spot.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Spot.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Tree.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/main.cpp">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
