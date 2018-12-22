@@ -19,7 +19,6 @@ private:
     Group players;
     Arena arena;
     int numOfIterations;
-
     bool goodFileState(const std::ifstream &file);
 };
 

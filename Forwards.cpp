@@ -15,3 +15,9 @@ double Forwards::getBeta() {
 double Forwards::getGama() {
     return 1.0;
 }
+
+char Forwards::getLetter() {
+    return 'F';
+}
+
+Forwards::Forwards(int id) : Player(id) { }

@@ -21,7 +21,6 @@ private:
     Spot arena[Limits::X_MAX][Limits::Y_MAX];
     Group *players;
     bool objectiveReached;
-
     bool isPointInSpot(int i, int j, Point p) const;
 };
 

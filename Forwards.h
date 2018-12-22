@@ -9,6 +9,10 @@
 #include "Player.h"
 
 class Forwards : public Player{
+public:
+    Forwards(int id);
+    char getLetter();
+private:
     virtual double getAlpha();
     virtual double getBeta();
     virtual double getGama();

@@ -49,10 +49,6 @@ void Player::setCurrentLocation(Point point, Point objective) {
 void Player::setSpeedVector(SpeedVector &vector) {
     speed = vector;
 }
-/*sets id*/
-void Player::setId(int i) {
-    id = i;
-}
 
 /*updates the current location of a player according to the speed*/
 void Player::update(Point &objective, Player &globalBest) {
@@ -79,4 +75,29 @@ SpeedVector Player::getNewSpeed(Player &globalBest) {
 /*random variables between 0 to 1*/
 double Player::r() {
     return rand()/static_cast<double>(RAND_MAX);
+}
+
+Player::Player(int id) : id(id) {}
+
+bool Player::operator==(const Player &rhs) {
+    return id == rhs.getId();
+}
+
+int Player::getId() const {
+    return id;
+}
+
+bool Player::operator==(int id) {
+    return getId() == id;
+}
+
+bool Player::operator>(const Player &rhs) {
+    return getId() > rhs.getId();
+}
+
+bool Player::operator<(const Player &rhs) {
+    return getId() < rhs.getId();
+}
+
+Player::~Player() {
 }

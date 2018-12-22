@@ -8,43 +8,39 @@ template <typename T>
 class Tree {
 public:
     Tree();
-    void insert(T *data);
+    void insert(T data);
     void print();
 
     Node<T> *search(T value);
-
     Node<T> *min();
-
     Node<T> *max();
-
     void remove(T* data);
-
     void clear();
-
     virtual ~Tree();
-
     int numOfNodes();
 
 private:
-    Node<T> *root;
-    Node<T> * insert(T *data, Node<T> *cur);
+    Node<T> * insert(T data, Node<T> *cur);
     void print(Node<T> *cur);
     Node<T> *search(T value, Node<T> *cur);
     Node<T> *min(Node<T> *cur);
     Node<T> *max(Node<T> *cur);
-    Node<T> * remove(T *data, Node<T> *root);
+    Node<T> * remove(T data, Node<T> *root);
     Node<T> *getFather(Node<T> *son, Node<T> *cur);
     void clear(Node<T> *cur);
     int numOfNodes(Node<T> *cur);
+
+protected:
+    Node<T> *root;
 };
 
 template<typename T>
-void Tree<T>::insert(T *data) {
+void Tree<T>::insert(T data) {
     root = insert(data, root);
 }
 
 template<typename T>
-Node<T>* Tree<T>::insert(T *data, Node<T> *cur) {
+Node<T>* Tree<T>::insert(T data, Node<T> *cur) {
     if (!cur) {
         return new Node<T>(data);
     }
@@ -130,7 +126,7 @@ void Tree<T>::remove(T* data) {
 }
 
 template<typename T>
-Node<T>* Tree<T>::remove(T *data, Node<T> *root) {
+Node<T>* Tree<T>::remove(T data, Node<T> *root) {
     Node<T>* toRemove = search(*data, root);
 
     if (toRemove == NULL) {

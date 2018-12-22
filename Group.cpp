@@ -12,8 +12,6 @@
 Group::Group(){
 }
 
-
-
 /*operator =*/
 Group& Group::operator=(const Group& a)
 {
@@ -27,7 +25,6 @@ Group& Group::operator=(const Group& a)
 
     return *this;
 }
-
 
 /*copy constructor */
 Group::Group(const Group &a){
@@ -71,7 +68,6 @@ bool Group::init(char *fileName) {
     }
 
     Group::numOfPlayers = numOfPlayers;
-    players = new Player*[numOfPlayers];
     char playerType;
     Point p;
     SpeedVector v;
@@ -83,34 +79,35 @@ bool Group::init(char *fileName) {
         if (!Limits::inArena(p)){
             return false;
         }
+        Player *currentPlayer;
         switch (playerType) {
             case ('G'):
-                players[i] = new Goalie(); break;
+                currentPlayer = new Goalie(i); break;
             case('D'):
-                players[i] = new Defencemen(); break;
+                currentPlayer = new Defencemen(i); break;
             case('F'):
-                players[i] = new Forwards(); break;
+                currentPlayer = new Forwards(i); break;
             default:
                 return false;
         }
-        players[i]->setCurrentLocation(p, objective);
-        players[i]->setSpeedVector(v);
-        players[i]->setId(i);
+        currentPlayer->setCurrentLocation(p, objective);
+        currentPlayer->setSpeedVector(v);
+        players.insert(currentPlayer);
     }
-    return file.eof();
+    return true;
 }
 /*checks the file */
 bool Group::goodFileState(const std::ifstream &file) {
     return !file.fail() && !file.bad();
 }
 /**/
-Group::~Group() {
-    delete[] players;
-}
+Group::~Group() { }
 
 void Group::printInfo() {
+    Player *curPlayer;
     for (int i=0; i<numOfPlayers; i++){
-        cout << players[i]->getCurrentLocation().x << " " << players[i]->getCurrentLocation().y;
+        curPlayer = players.getPlayerById(i);
+        cout << curPlayer->getLetter() << " " << curPlayer->getCurrentLocation().x << " " << curPlayer->getCurrentLocation().y;
         if (i != numOfPlayers-1){
             cout << endl;
         }
@@ -120,7 +117,7 @@ void Group::printInfo() {
 void Group::update() {
     updateGlobalBest();
     for (int i=0; i<numOfPlayers; i++){
-        players[i]->update(objective, *globalBest);
+        players.getPlayerById(i)->update(objective, *globalBest);
     }
 }
 
@@ -128,14 +125,14 @@ void Group::updateGlobalBest() {
     double currentDistance;
     double shortestDistance = INT32_MAX;
     for (int i=0; i<numOfPlayers; i++){
-        currentDistance = players[i]->getCurrentLocation().getDistanceFrom(objective);
+        currentDistance = players.getPlayerById(i)->getCurrentLocation().getDistanceFrom(objective);
         if (currentDistance < shortestDistance){
             shortestDistance = currentDistance;
-            globalBest = players[i];
+            globalBest = players.getPlayerById(i);
         }
     }
 }
 
-Player *Group::getPlayers() const {
-    return *players;
+PlayerTree<Player*>* Group::getPlayers() {
+    return &players;
 }

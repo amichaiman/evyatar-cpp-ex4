@@ -15,3 +15,9 @@ double Goalie::getBeta() {
 double Goalie::getGama() {
     return -0.25;
 }
+
+Goalie::Goalie(int id): Player(id) { }
+
+char Goalie::getLetter() {
+    return 'G';
+}

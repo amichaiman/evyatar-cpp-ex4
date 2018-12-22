@@ -8,11 +8,15 @@
 template <typename T>
 class Node {
 public:
-    T *getData() const {
+    T getData() const {
         return data;
     }
 
-    void setData(T *data) {
+    virtual ~Node() {
+        delete data;
+    }
+
+    void setData(T data) {
         Node::data = data;
     }
 
@@ -32,7 +36,7 @@ public:
         Node::right = right;
     }
 
-    Node(T *data) : data(data), left(NULL), right(NULL) {}
+    Node(T data) : data(data), left(NULL), right(NULL) {}
 
     bool isLeaf() {
         return !left && !right;
@@ -47,7 +51,7 @@ public:
     }
 
 private:
-    T* data;
+    T data;
     Node<T> *left;
     Node<T> *right;
 };

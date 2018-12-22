@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Point.h"
 #include "Tree.h"
+#include "PlayerTree.h"
 #include <fstream>
 using namespace std;
 
@@ -21,12 +22,11 @@ public:
     virtual ~Group();
     void printInfo();
 
-    Player *getPlayers() const;
+    PlayerTree<Player *> * getPlayers() ;
 
     void update();
 private:
-    Tree<Player> players;
-    Player **players;
+    PlayerTree<Player*> players;
     Player *globalBest;
     Point objective;
     int numOfPlayers;

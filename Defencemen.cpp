@@ -15,3 +15,9 @@ double Defencemen::getBeta() {
 double Defencemen::getGama() {
     return 0;
 }
+
+Defencemen::Defencemen(int id) : Player(id) { }
+
+char Defencemen::getLetter() {
+    return 'D';
+}

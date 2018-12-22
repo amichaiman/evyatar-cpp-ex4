@@ -9,7 +9,7 @@ void Arena::update(Group &group) {
         for (int j=Limits::Y_MIN; j<Limits::Y_MAX; j++){
             arena[i][j].setNumberOfPlayers(0);
             for (int k=0; k<group.getNumOfPlayers(); k++){
-                if (isPointInSpot(i,j, group.getPlayers()[k].getCurrentLocation())){
+                if (isPointInSpot(i,j, group.getPlayers()->getPlayerById(k)->getCurrentLocation())){
                     arena[i][j]++;
                     if (isPointInSpot(i,j,group.getObjective())){
                         objectiveReached = true;

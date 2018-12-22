@@ -135,6 +135,9 @@
 		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Player.h">
 			<Option target="evyatar_generic_tree"/>
 		</Unit>
+		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/PlayerTree.h">
+			<Option target="evyatar_generic_tree"/>
+		</Unit>
 		<Unit filename="/home/amichai/CLionProjects/evyatar-generic-tree/Point.cpp">
 			<Option target="evyatar_generic_tree"/>
 		</Unit>
